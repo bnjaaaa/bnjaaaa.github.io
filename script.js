@@ -2,31 +2,31 @@ const datosDias = {
     lunes: {
         titulo: "Lunes",
         rutinaPrincipal: "Gym: tren inferior + caminata suave de 10 minutos.",
-        rutinaAlternativa: "Si no puedes ir al gym, realiza una rutina en casa de 20 minutos.",
+        rutinaAlternativa: "Si no puedes ir al gym, realiza una rutina en casa de 20 minutos de cardiohit.",
         comidas: [
             "Desayuno: yogur con avena y fruta.",
             "Almuerzo: arroz con pollo y ensalada.",
-            "Cena: tortilla de huevo con verduras."
+            "Cena: tortilla de huevo con verduras o atún con verduras."
         ],
         consejo: "No busques hacerlo perfecto, busca cumplir lo planificado de forma constante."
     },
     martes: {
         titulo: "Martes",
-        rutinaPrincipal: "Gym: espalda y bíceps + estiramiento al terminar.",
-        rutinaAlternativa: "Haz una rutina corta con bandas elásticas o mancuernas en casa.",
-        comidas: [
+        rutinaPrincipal: "Gym: espalda y bíceps (Recuerda empezar estirando, calentando manguito rotador y etc) terminar con cardio.",
+            rutinaAlternativa: "Haz una rutina corta en casa (Crunch abdominal 3x15 no tires del cuello Acostado, subes ligeramente el torso), (Elevaciones de piernas 3x12 - Mantén las piernas rectas y baja lento), (Plancha 3x30-60 seg - Aprieta abdomen y glúteos).",
+            comidas: [
             "Desayuno: pan integral con huevo.",
-            "Almuerzo: carne magra con papas cocidas y ensalada.",
-            "Cena: yogur alto en proteína con fruta."
+            "Almuerzo: carne magra o pollo con papas cocidas y ensalada.",
+            "Cena: yogur alto en proteína con fruta o avena."
         ],
         consejo: "Cumplir aunque sea un poco siempre será mejor que no hacer nada."
     },
     miercoles: {
         titulo: "Miércoles",
-        rutinaPrincipal: "Ejercicio en casa: sentadillas, zancadas, plancha y jumping jacks por 25 minutos.",
-        rutinaAlternativa: "Si estás muy ocupada, haz 10 minutos de movilidad y una caminata corta.",
+        rutinaPrincipal: "Puedes descansar o en caso de que no hayas podido ir el martes hacer lo de ese dia hoy.",
+        rutinaAlternativa: "Descansar, te.",
         comidas: [
-            "Desayuno: avena con plátano.",
+            "Desayuno: Leche con avena y pan (Le puedes poner lo que quieras  mientras sea bajo en grasas.).",
             "Almuerzo: pollo con arroz y verduras.",
             "Cena: ensalada con atún o huevo."
         ],
@@ -34,11 +34,11 @@ const datosDias = {
     },
     jueves: {
         titulo: "Jueves",
-        rutinaPrincipal: "Gym: glúteos y piernas + 10 minutos de bicicleta.",
+        rutinaPrincipal: "Gym: glúteos y piernas + 10-15 minutos de cardio",
         rutinaAlternativa: "En casa puedes hacer puente de glúteos, sentadillas y patadas de glúteo.",
         comidas: [
-            "Desayuno: yogur con cereal y fruta.",
-            "Almuerzo: fideos con pollo y verduras.",
+            "Desayuno: yogur con avena y platano.",
+            "Almuerzo: Pan proteico con atun/pollo/huevo y palta o tomate",
             "Cena: omelette con ensalada."
         ],
         consejo: "La constancia semanal vale más que un solo día perfecto."
@@ -49,7 +49,7 @@ const datosDias = {
         rutinaAlternativa: "Haz una rutina full body corta en casa con peso corporal.",
         comidas: [
             "Desayuno: tostadas con palta y huevo.",
-            "Almuerzo: arroz con carne magra y verduras.",
+            "Almuerzo: Arroz + atún + huevo",
             "Cena: yogur o sándwich liviano con proteína."
         ],
         consejo: "Termina la semana fuerte, pero sin exigirte más de la cuenta."
@@ -63,7 +63,7 @@ const datosDias = {
             "Almuerzo: proteína con ensalada y carbohidrato moderado.",
             "Cena: comida ligera y saciante."
         ],
-        consejo: "Disfrutar también es parte de llevar una vida saludable."
+        consejo: "Disfrutar fin de semana."
     },
     domingo: {
         titulo: "Domingo",
@@ -74,7 +74,7 @@ const datosDias = {
             "Almuerzo: comida casera con buena porción de proteína.",
             "Cena: algo simple para cerrar la semana."
         ],
-        consejo: "Descansar también ayuda al progreso y a la recomposición corporal."
+        consejo: "Descansar."
     }
 };
 
