@@ -23,7 +23,7 @@ body {
 /* PORTADA */
 .hero {
     min-height: 100vh;
-    background-image: url("imagenes/portada.jpg");
+    background-image: url("portada.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
