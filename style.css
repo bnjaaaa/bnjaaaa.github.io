@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fb;
+    color: #333;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* PORTADA */
+.hero {
+    min-height: 100vh;
+    background-image: url("imagenes/portada.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-contenido {
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+
+.subtitulo {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 25px;
+    line-height: 1.6;
+}
+
+.btn-hero {
+    display: inline-block;
+    padding: 14px 24px;
+    background: #6ea8fe;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-hero:hover {
+    background: #4d94ff;
+}
+
+/* BIENVENIDA */
+.bienvenida {
+    margin: 50px 0 30px;
+    text-align: center;
+}
+
+.bienvenida h2 {
+    margin-bottom: 10px;
+}
+
+/* TITULO DE SECCION */
+.seccion-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+/* BOTON REINICIAR */
+.btn-reiniciar {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    background: #dc3545;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-reiniciar:hover {
+    background: #bb2d3b;
+}
+
+/* SECCIÓN DÍAS */
+.dias-semana {
+    margin: 30px 0;
+}
+
+.grid-dias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.dia-card {
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.dia-card:hover {
+    background: #e7f1ff;
+}
+
+.dia-card.activo {
+    background: #6ea8fe;
+    color: white;
+}
+
+/* DETALLE DEL DÍA */
+.detalle-dia {
+    margin: 30px 0;
+}
+
+.detalle-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn-completado {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: #198754;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn-completado:hover {
+    background: #157347;
+}
+
+.detalle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.card-info {
+    background: white;
+    padding: 18px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+.card-info h3 {
+    margin-bottom: 10px;
+    color: #0d6efd;
+}
+
+.card-info ul {
+    padding-left: 18px;
+    line-height: 1.8;
+}
+
+/* PROGRESO */
+.progreso-semanal {
+    margin: 40px 0 60px;
+}
+
+.barra-progreso {
+    width: 100%;
+    height: 22px;
+    background: #ddd;
+    border-radius: 12px;
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+.relleno-progreso {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #198754, #20c997);
+    transition: width 0.3s ease;
+}
+
+/* FOOTER */
+.pie-pagina {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
+
+    .detalle-header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .seccion-titulo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

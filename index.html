@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vida Saludable</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor">
+      <h1>Vida Saludable</h1>
+      <p class="subtitulo">
+        Hola catita, esta pagina será para que te organices mejor tus días durante la semana y puedas cumplir con tus macros, tiempos y etc...
+      </p>
+    </div>
+  </header>
+
+  <main class="contenedor">
+
+    <section class="bienvenida">
+      <div class="bienvenida-texto">
+        <h2>Tu planificación semanal</h2>
+        <p>
+          Aquí podrás revisar tu rutina del día, opciones de comida y consejos
+          para mantener una vida saludable y apoyar tu recomposición corporal.
+        </p>
+      </div>
+    </section>
+
+    <section class="dias-semana">
+      <h2>Días de la semana</h2>
+      <div class="grid-dias">
+        <button class="dia-card activo" data-dia="lunes">Lunes</button>
+        <button class="dia-card" data-dia="martes">Martes</button>
+        <button class="dia-card" data-dia="miercoles">Miércoles</button>
+        <button class="dia-card" data-dia="jueves">Jueves</button>
+        <button class="dia-card" data-dia="viernes">Viernes</button>
+        <button class="dia-card" data-dia="sabado">Sábado</button>
+        <button class="dia-card" data-dia="domingo">Domingo</button>
+      </div>
+    </section>
+
+    <section class="detalle-dia">
+      <div class="detalle-header">
+        <h2 id="titulo-dia">Lunes</h2>
+        <button id="btn-completado" class="btn-completado">Marcar como completado</button>
+      </div>
+
+      <div class="detalle-grid">
+
+        <article class="card-info">
+          <h3>Rutina principal</h3>
+          <p id="rutina-principal">
+            Gym: tren inferior + caminata suave de 10 minutos.
+          </p>
+        </article>
+
+        <article class="card-info">
+          <h3>Opción alternativa</h3>
+          <p id="rutina-alternativa">
+            Si no puedes ir al gym, realiza una rutina en casa de 20 minutos.
+          </p>
+        </article>
+
+        <article class="card-info">
+          <h3>Comidas sugeridas</h3>
+          <ul id="comidas-lista">
+            <li>Desayuno: yogur con avena y fruta.</li>
+            <li>Almuerzo: arroz con pollo y ensalada.</li>
+            <li>Cena: tortilla de huevo con verduras.</li>
+          </ul>
+        </article>
+
+        <article class="card-info">
+          <h3>Consejo del día</h3>
+          <p id="consejo-dia">
+            No busques hacerlo perfecto, busca cumplir lo planificado de forma constante.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="progreso-semanal">
+      <h2>Progreso semanal</h2>
+      <p id="texto-progreso">Has completado 0 de 7 días esta semana.</p>
+
+      <div class="barra-progreso">
+        <div id="relleno-progreso" class="relleno-progreso"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie-pagina">
+    <p>Vida Saludable - Planificación semanal personalizada</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
