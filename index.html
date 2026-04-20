@@ -8,18 +8,21 @@
 </head>
 <body>
 
-  <header class="encabezado">
-    <div class="contenedor">
-      <h1>Vida Saludable</h1>
-      <p class="subtitulo">
-        Hola catita, esta pagina será para que te organices mejor tus días durante la semana y puedas cumplir con tus macros, tiempos y etc...
-      </p>
+  <header class="hero">
+    <div class="hero-overlay">
+      <div class="contenedor hero-contenido">
+        <h1>Vida Saludable</h1>
+        <p class="subtitulo">
+          Organiza tu semana con rutinas, comidas y hábitos para sentirte mejor cada día.
+        </p>
+        <a href="#plan-semanal" class="btn-hero">Ver planificación</a>
+      </div>
     </div>
   </header>
 
   <main class="contenedor">
 
-    <section class="bienvenida">
+    <section class="bienvenida" id="plan-semanal">
       <div class="bienvenida-texto">
         <h2>Tu planificación semanal</h2>
         <p>
@@ -30,7 +33,11 @@
     </section>
 
     <section class="dias-semana">
-      <h2>Días de la semana</h2>
+      <div class="seccion-titulo">
+        <h2>Días de la semana</h2>
+        <button id="btn-reiniciar" class="btn-reiniciar">Reiniciar semana</button>
+      </div>
+
       <div class="grid-dias">
         <button class="dia-card activo" data-dia="lunes">Lunes</button>
         <button class="dia-card" data-dia="martes">Martes</button>
